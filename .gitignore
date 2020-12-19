@@ -1,2 +1,5 @@
 #folder
 node_modules/
+
+#file
+dev.js

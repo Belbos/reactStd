@@ -11,7 +11,7 @@ const userSchema = mongoose.Schema({
         trim: true,
         maxlength: 50  
     },
-    password:{
+    password: {
         type: String,
         minlength: 5
     },
@@ -19,7 +19,7 @@ const userSchema = mongoose.Schema({
         type: String,
         maxlength: 50  
     },
-    role:{
+    role: {
         type: Number,
         default: 0
     },
@@ -32,6 +32,6 @@ const userSchema = mongoose.Schema({
     }
 })
 
-const user = mongoose.model('User', userSchema)
+const User = mongoose.model('User', userSchema)
 
-module.exports= {user}
+module.exports= {User}
